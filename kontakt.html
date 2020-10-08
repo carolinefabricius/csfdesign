@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=devce-width, initial-scale=1.0">
+  <title>CSF Design</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link rel="stylesheet" href="stylesheet.css">
+  <style media="screen">
+
+  body {font-family:'Poppins';}
+  * {box-sizing: border-box;
+}
+label {
+    color: #4a4a4a;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);}
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;}
+}
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 0px solid #4a4a4a;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: #e9ffbf;
+  }
+input:focus, textarea{
+  outline-color: #ff78d6;
+}
+
+  input[type=submit] {
+    background-color: #4a4a4a;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color:#ff78d6;
+  }
+
+  .container {
+    border-radius: 2px;
+    background-color: white;
+    padding: 0px;
+    max-width: 50%;
+  }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h2 Class="logo"><span id="csf">CSF</span> DESIGN</h2>
+    <input type="checkbox" id="chk">
+    <label for="chk" class="show-menu-btn">
+      <i class="far fa-bars"></i>
+    </label>
+
+    <ul class="menu">
+      <a href="/Users/bruger/Documents/Studie/Kodning/csfdesign/index.html">Hej</a>
+      <a href="/Users/bruger/Documents/Studie/Kodning/csfdesign/info.html">Info</a>
+      <a href="/Users/bruger/Documents/Studie/Kodning/csfdesign/værker.html">Værker</a>
+      <a href="/Users/bruger/Documents/Studie/Kodning/csfdesign/kontakt.html">Kontakt</a>
+      <label for="chk" class="hide-menu-btn">
+        <i class="fas fa-times"></i>
+    </ul>
+  </div>
+  <p>&nbsp;</p>
+<div class="content">
+  <div class="fade-in tak">
+    <h3 class="tak-overskrift">TAK FOR DIN OPMÆRKSOMHED</h3>
+    </div>
+<p>&nbsp;</p>
+<div class="fade-in kontakt">
+<h3 class="kontakt-overskrift">Kontakt mig</h3>
+
+<p>&nbsp;</p>
+<p class="kontakt-oplysning">Hvis jeg har vakt din interesse, er du mere end
+
+velkommen til at kontakte mig! Jeg er meget let tilgængelig:</p>
+<p>&nbsp;</p>
+
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fornavn">Fornavn</label>
+    <input type="text" id="fname" name="firstname" placeholder="Dit navn..">
+
+    <label for="efternavn">Efternavn</label>
+    <input type="text" id="lname" name="lastname" placeholder="Dit efternavn..">
+
+    <label for="email">Email</label>
+    <input type="text" id="lname" name="lastname" placeholder="Din e-mailadresse..">
+
+    <label for="emne">Emne</label>
+    <textarea id="subject" name="subject" placeholder="Skriv noget.." style="height:200px"></textarea>
+
+    <input type="submit" value="Indsend">
+  </form>
+</div>
+  <img id="selfie" src="img/selfie.jpg" alt="Mig">
+</div>
+  </div>
+
+  <footer>
+  <h4 id="om-siden">OM SIDEN</h4>
+
+  <p>CSF Design er mit brand og udgør mit portfolio.</p>
+  <p>Følg min udvikling i løbet af min Multimediedesign-uddannelse 2020-2022.</p>
+  </footer>
+
+</body>
+
+</html>
